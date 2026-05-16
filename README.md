@@ -1,200 +1,98 @@
-Customer Shopping Behavior Analysis
-Project Overview
+# Customer Shopping Behavior Analysis
 
-This project analyzes customer shopping behavior using transactional retail data to uncover insights into customer spending patterns, product preferences, subscription behavior, and customer segments.
+## Overview
 
-The analysis combines:
+Analyzed **3,900 customer transactions** to uncover insights into customer spending behavior, product preferences, subscription trends, and purchasing patterns using **Python, MySQL, and Power BI**.
 
-Python for data cleaning and preprocessing
-MySQL for business-focused analytical queries
-Power BI for interactive dashboard visualization
+## Dataset Highlights
 
-The goal is to transform raw transactional data into actionable business insights that can support strategic decision-making.
+* **3,900 purchases**
+* **18 features**
+* **Average Spend:** $59.76
+* **Average Rating:** 3.75
+* **37 missing review ratings** handled using category median imputation
 
-Dataset Information
+---
 
-The dataset contains information from 3,900 customer purchases across multiple product categories.
+## Project Workflow
 
-Features Included
-Customer demographics
-Age
-Gender
-Location
-Subscription Status
-Purchase details
-Item Purchased
-Category
-Purchase Amount
-Season
-Size
-Color
-Shopping behavior
-Discount Applied
-Previous Purchases
-Purchase Frequency
-Review Rating
-Shipping Type
-Technologies Used
-Tool / Technology	Purpose
-Python	Data cleaning & preprocessing
-Pandas	Data manipulation
-MySQL	Business query analysis
-Power BI	Dashboard & visualization
-Excel	Initial dataset handling
-Project Workflow
-1. Data Preparation in Python
-Tasks Performed
-Loaded dataset using Pandas
-Performed exploratory data analysis using:
-df.info()
-df.describe()
-Checked and handled missing values
-Standardized column names into snake_case
-Created new engineered features
-Missing Value Handling
+### Python
 
-The review_rating column contained 37 missing values.
+* Data cleaning & preprocessing
+* Missing value handling
+* Feature engineering (`age_group`, purchase frequency)
+* Data consistency validation
 
-These missing values were imputed using:
+### SQL Business Analysis
 
-Median review rating of each product category
-Feature Engineering
+* Revenue analysis by gender & age group
+* Subscriber vs non-subscriber comparison
+* Customer segmentation (New, Returning, Loyal)
+* Top-rated products analysis
+* Discount behavior analysis
+* Shipping type spending comparison
 
-Created:
+### Power BI
 
-age_group
-purchase_frequency_days
-Data Consistency Validation
-Verified redundancy between:
-discount_applied
-promo_code_used
-Removed unnecessary duplicate information
-SQL Integration
+Built an interactive dashboard with filters for:
 
-The cleaned dataset was loaded into MySQL for structured business analysis.
+* Subscription status
+* Gender
+* Product category
+* Shipping type
 
-SQL Business Analysis
+---
 
-The project answers multiple business-oriented analytical questions using SQL.
+## Key Business Insights
 
-Key Analyses Performed
-Revenue Analysis
-Revenue by gender
-Revenue by age group
-Revenue by subscription status
-Customer Behavior Analysis
-Repeat buyers vs subscription behavior
-High-spending discount users
-Customer segmentation:
-New
-Returning
-Loyal
-Product Analysis
-Top 5 highest-rated products
-Top products per category
-Discount-dependent products
-Shipping Analysis
-Comparison between:
-Standard shipping
-Express shipping
-Key Insights
-Revenue & Spending
-Male customers generated nearly 2× more revenue than female customers.
-Express shipping users spent slightly more on average compared to standard shipping users.
-839 customers used discounts while still spending above the average purchase amount.
-Customer Segmentation
+* Male customers generated nearly **2× higher revenue** than female customers
+* **839 discount users** still spent above the average purchase amount
+* Express shipping users spent **$60.48 avg** vs **$58.46** for standard shipping users
+* Non-subscribers accounted for:
 
-Customers were segmented based on purchase history into:
+  * **2,847 customers**
+  * **73% of total revenue**
+* Subscribers:
 
-New Customers
-Returning Customers
-Loyal Customers
+  * **1,053 customers**
+  * Generated **$62,645 revenue**
+* Clothing category generated the highest overall revenue
+* Top-rated products included:
 
-Analysis showed:
+  * Gloves (**3.86**)
+  * Sandals (**3.84**)
+  * Boots (**3.82**)
+* Most discount-dependent products:
 
-Loyal customers dominate repeat purchases
-Many repeat buyers are still not subscribed
-Subscription Insights
-Non-subscribers represented:
-73% of customers
-73% of total revenue
+  * Hat (**50% discounted purchases**)
+  * Sneakers (**49.66%**)
 
-This indicates a strong opportunity for subscription conversion strategies.
+---
 
-Product Insights
-Highest Rated Products
-Gloves
-Sandals
-Boots
-Hat
-Skirt
-Most Discount-Dependent Products
-Hat
-Sneakers
-Coat
-Sweater
-Pants
-Power BI Dashboard
+## Business Recommendations
 
-An interactive Power BI dashboard was developed to visualize:
+* Increase subscription conversion through exclusive member benefits
+* Launch loyalty programs targeting repeat buyers
+* Optimize discount strategy for highly discounted products
+* Focus targeted marketing on high-spending age groups and express-shipping users
+* Promote top-rated products in marketing campaigns to improve conversions
 
-Revenue trends
-Customer segments
-Product performance
-Subscription analysis
-Shipping behavior
-Dashboard Filters
-Subscription Status
-Gender
-Category
-Shipping Type
-Business Recommendations
-Increase Subscription Conversion
+---
 
-Provide exclusive subscriber benefits to convert non-subscribers.
+## Technologies Used
 
-Customer Loyalty Programs
+Python • Pandas • MySQL • Power BI • Excel
 
-Reward repeat buyers to move more customers into the loyal segment.
+---
 
-Optimize Discount Strategy
+## Skills Demonstrated
 
-Balance discount campaigns with profitability for highly discounted products.
+Data Cleaning • EDA • SQL Queries • Business Analytics • Dashboard Development • Data Visualization • Feature Engineering
 
-Targeted Marketing
+---
 
-Focus marketing campaigns on:
-
-Young adults
-Express shipping users
-High-spending customer groups
-Skills Demonstrated
-Data Cleaning
-Exploratory Data Analysis (EDA)
-Feature Engineering
-SQL Query Writing
-Business Intelligence
-Dashboard Development
-Data Visualization
-Analytical Thinking
-Project Structure
-Customer-Shopping-Behavior-Analysis/
-│
-├── data/
-├── python/
-├── sql/
-├── powerbi/
-├── presentation/
-├── report/
-└── README.md
-Future Improvements
-Add predictive analytics models
-Customer churn prediction
-Recommendation system
-Sales forecasting
-Automated ETL pipeline
-Author
+## Author
 
 Ajay
 Master’s Student in Information Technology at TH OWL
-Skills: Python, SQL, Power BI, Excel, Data Analytics & Machine Learning
+
