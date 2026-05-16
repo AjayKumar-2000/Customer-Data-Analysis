@@ -93,6 +93,7 @@ Data Cleaning • EDA • SQL Queries • Business Analytics • Dashboard Devel
 
 ## Author
 
-Ajay
+Ajay Kumar
 Master’s Student in Information Technology at TH OWL
+Contact = ajaygermany6@gmail.com
 
