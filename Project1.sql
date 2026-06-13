@@ -6,7 +6,7 @@ from customer
 group by gender;
 
 #2. Which customers used a discount but still spent more than the average purchase amount? 
-select customer_customerid,purchase_amount 
+select customer_id,purchase_amount 
 from customer 
 where discount_applied = 'Yes' and purchase_amount >= (select AVG(purchase_amount) from customer);
 
